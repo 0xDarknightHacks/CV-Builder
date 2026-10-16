@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python cvbuild.py:*)",
+      "Bash(python3 cvbuild.py:*)"
+    ],
+    "deny": [
+      "Read(./fonts/**)",
+      "Read(./applications/**/*.pdf)",
+      "Read(./applications/**/*.docx)",
+      "Read(./venv/**)",
+      "Read(./.venv/**)"
+    ]
+  }
+}

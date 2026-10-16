@@ -1,0 +1,32 @@
+{
+ "file_stem": "First_Last_Resume",
+ "target": "master (untailored)",
+ "header": {
+  "name": "FIRST LAST",
+  "title": "Your Headline",
+  "lines": [
+   "City, Country | Open to relocation | +00 000 000 000 | [name@example.com](mailto:name@example.com)",
+   "[linkedin.com/in/your-profile](https://www.linkedin.com/in/your-profile)"
+  ]
+ },
+ "summary": "Two plain lines on how you work, without a technology list or self-praise.",
+ "experience": [
+  {
+   "company": "Employer",
+   "location": "City, Country",
+   "title": "Official Job Title",
+   "date": "Jan 2024 – Present",
+   "bullets": [
+    {"text": "**Action verb and outcome** with the scope, the tools and a number where one exists.", "facts": ["F-EXAMPLE-01"]}
+   ]
+  }
+ ],
+ "projects": [],
+ "skills": [
+  {"label": "Capability group", "text": "skill, skill, skill"}
+ ],
+ "education": [
+  {"title": "Degree name", "rest": " | School, City", "date": "2018 – 2022"}
+ ],
+ "languages": "English (level) | Other language (level)"
+}
