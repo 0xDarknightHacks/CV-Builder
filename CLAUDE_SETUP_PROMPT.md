@@ -18,6 +18,7 @@ You are setting up a CV-builder repository for me. Attached: `cv-builder.zip` (t
    Then wait for my answers.
 4. Write `profile/master.md` following the template structure:
    - Identity, Constraints, Confidential, Do-not-claim, Clients, Experience (one section per employer), Projects, Evidence bank, Skills, Education, Pending verification, Changelog;
+   - under each employer heading, an `Official title:` line with my exact job title (the build compares CV titles against it);
    - one `### F-<AREA>-<NN> · title` fact block per distinct achievement, with `what`, `metrics` (if any), `confidence`, `cv:` (approved bullet wording);
    - `confidence: verified` for what my resume or my answers state; `pending` for anything you inferred;
    - terms in Confidential, Do-not-claim and Clients wrapped in backticks;
@@ -35,7 +36,7 @@ You are setting up a CV-builder repository for me. Attached: `cv-builder.zip` (t
    - orphan line → trim a few words in that bullet;
    - client dropped / forbidden term → restore or remove as instructed.
    If possible, render the PDF to an image and check the layout visually: one page, nothing cut off.
-7. Final checks: no `<…>`, `FIRST LAST`, `First_Last`, `example.com` or `F-EXAMPLE` remain in `profile/`; `tracker.csv` has only its header; `python cvbuild.py facts` lists my facts. Add a Changelog line to master.md. Delete `applications/_master/`.
+7. Final checks: no `<…>`, `FIRST LAST`, `First_Last`, `example.com`, `F-EXAMPLE` or `Official Job Title` remain in `profile/`; `tracker.csv` has only its header; `python cvbuild.py facts` lists my facts. Add a Changelog line to master.md. Delete `applications/_master/`.
 8. Zip the repository as `cv-builder-<first>-<last>.zip` (same folder structure) and give it to me as a downloadable file, along with:
    - a ≤ 10-line report: number of facts, which facts are `pending` and what I must confirm, build result and font size;
    - the PDF of my master CV for review.

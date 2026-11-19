@@ -17,6 +17,15 @@ Evidence rules:
 - Generic soft requirements (communication, mindset, "follows evolutions") are rated but marked `soft`.
 - **Language requirements are eligibility, not skills:** list them under Blockers (met / soft / hard) and leave them out of the score.
 
+## Evidence tiers (every requirement carries one)
+- `stated`: the JD itself makes it required ("must", "required", a legal / language / work-authorization gate, or it is in the title). Quote the JD verbatim in the row.
+- `structural`: no must-have wording, but the JD's structure gives it weight (listed under Requirements, repeated across responsibilities, first in the list).
+- `inferred`: your judgement of how such roles are screened. Allowed, but **an inferred requirement can never be core and never a blocker**.
+Principle: a wrong "no-go" costs a real job the user never applies to; a wrong "go" costs one read. Only explicit JD evidence may push toward NO-GO.
+
+## Years of experience
+Use `## Signals (auto-extracted)` → `years gate` in posting.md: only **required, overall** figures count; skill-specific ("3 years with Kubernetes") and preferred figures never block. Compare the gate to `## Constraints → Seniority` in master.md: gap ≤ 2 years = note only; 3–4 years = soft blocker; ≥ 5 years = hard blocker. No figure stated = no blocker.
+
 ## Weights
 - **core** ×3: must-haves that define the role's stated focus (title, "clear focus on…", first responsibilities). Mark 3–5 requirements as core.
 - must-have ×2 · nice-to-have ×1 · `soft` requirements ×1 whatever their label.
@@ -35,7 +44,8 @@ Language the user lacks, location / work permit, mandatory certification not hel
 ```
 # Fit: <role> @ <company> — <VERDICT> (<score>%)
 Blockers: …
-| Requirement | Core/Must/Nice/Soft | Rating | Evidence (fact IDs) |
+| Requirement | Core/Must/Nice/Soft | Tier (JD quote) | Rating | Evidence (fact IDs) |
+Posting signals (advisory, not scored): contract terms (e.g. B2B / contractor vs employment), salary figure or "not stated", posting age / reposted — copied from `## Signals`
 Strengths to lead with: 3 bullets
 Gaps to address honestly: 3 bullets (what to say in interview)
 Recommended CV emphasis: which facts to move up / swap in from the evidence bank

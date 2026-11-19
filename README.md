@@ -45,8 +45,16 @@ tracker.csv             one row per application
 - no `Confidential` or `Do-not-claim` terms anywhere
 - projects use a start year only (no "Present" ranges that parsers mistake for jobs)
 - every client listed in `master.md → ## Clients` is still present
+- every number in a bullet appears in the facts it cites (summary/skills: anywhere in master.md); job titles equal `Official title:` in master.md
+- style warnings (not blocking): personal pronouns, weak openers ("responsible for", "helped"), vague words ("various", "etc."), the same lead verb more than twice; English and French rules
+
+French CVs: set `"lang": "fr"` in a cv.json for French headings (PROFIL, EXPÉRIENCE PROFESSIONNELLE…) and French punctuation; cv-tailor produces `cv.fr.json` automatically for French postings.
 
 `fetch` also appends auto-extracted contacts (emails, hiring team, "apply via portal" hints). The application writer turns them into `contact.md` (channel, address, source, confidence) and `letter` validates it and writes a ready `mailto:` link (attachments must be added manually).
+
+`fetch` also appends advisory signals: years required (only required, overall figures gate), contract terms (B2B, contractor, CDI/CDD…), salary figure, posting age.
+
+`letter` also fails on numbers not found in master.md or the posting (letter, email, answers.md), checks answers.md for forbidden terms, and warns on stock AI phrasing.
 
 `letter` renders the cover letter to PDF + DOCX (one page, 200–360 words) and checks `email.md` (≤ 140 words) for forbidden terms. `diff` lists every change versus `base_cv.json` for a quick review before sending.
 
@@ -58,6 +66,8 @@ tracker.csv             one row per application
 - Use Git: every profile and CV change becomes a reviewable diff.
 
 ## Notes
+- Data location: `cvbuild.py` uses `$CVBUILD_HOME` if set, else the current folder when it contains `profile/master.md`, else its own folder.
+- Fonts: bundled Carlito (metric-compatible with Calibri); falls back to an installed Carlito or Calibri, then Helvetica with a warning.
 - Keyword coverage from `ats` is a heuristic, not a real ATS score.
 - Fit thresholds (GO ≥ 65%, BORDERLINE 50–64%) live in `fit-assessor/SKILL.md`. Adjust to taste.
 - Always review documents before sending; the tools enforce truthfulness and layout, not judgment.

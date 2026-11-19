@@ -6,7 +6,7 @@ Truthful, tailored job applications from one profile. Python 3.9+, run from repo
 1. job-intake → `applications/<date>_<company>_<role>/posting.md`
 2. fit-assessor → `fit.md` + tracker row → **stop and ask** before continuing
 3. cv-tailor → `cv.json` → `python cvbuild.py build …` must print PASS
-4. application-writer → `cover-letter.md`, `email.md`, `contact.md` → `cvbuild.py letter …` must print PASS
+4. application-writer → `cover-letter.md`, `email.md`, `contact.md`, `answers.md` → `cvbuild.py letter …` must print PASS
 5. interview-prep → `interview-prep.md`
 6. Update the tracker row (status `documents-ready`, channel from contact.md) and write `summary.md` (≤ 6 lines: verdict + score, how to send, files, open questions, any build WARN such as an unverified DOCX page count, and TODO facts cited).
 New mission / achievement / correction → profile-maintainer. First-time setup (empty profile) → profile-bootstrap.

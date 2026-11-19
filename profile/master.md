@@ -38,7 +38,7 @@ Every tailored CV keeps all of these names (checked automatically on build):
 - (add each client name wrapped in backticks; leave empty if you cannot name clients)
 
 ## Experience — <Employer>, <City, Country> (<Mon YYYY> – Present)
-Official title: <exact title>
+Official title: Official Job Title (replace with your exact title, as on your contract or LinkedIn)
 
 ### F-EXAMPLE-01 · <short title of one achievement>
 - what: <what you did, your exact role (led / delivered / assisted)>

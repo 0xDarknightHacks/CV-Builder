@@ -38,8 +38,11 @@ notes: <one line, e.g. "apply via Workday first, then follow up">
 ```
 If `to:` has an address, start email.md with `To: <address>` above the `Subject:` line. For `portal+follow-up`, phrase email.md as a short follow-up ("I have applied via your portal…").
 
+## answers.md (form answers for ATS portals, ≤ 25 lines)
+Ready-to-paste answers built only from master.md `## Identity` and `## Constraints`: work authorization / visa sponsorship · notice period / start date · location & relocation · remote preference · languages · certifications (only those held) · "Why this company?" (2–3 sentences from the posting) · salary expectation as `[fill in]` (never invent one).
+
 ## Tone rules
-Professional, respectful, modest. No superlatives, no claims of being "the perfect fit", no repeated CV bullets verbatim, no pronoun-heavy storytelling. Write in the posting's language if it is French; otherwise English.
+Professional, respectful, modest. No stock AI phrasing ("I am thrilled to", "leverage", "fast-paced", "passionate about", "proven track record", "delve", "seamless", "in today's…"); at most two em-dashes per document. Every number must come from master.md or the posting (the `letter` command fails otherwise). No superlatives, no claims of being "the perfect fit", no repeated CV bullets verbatim, no pronoun-heavy storytelling. Write in the posting's language if it is French; otherwise English. If a French CV (`*_FR.pdf`) was built, the French letter and email refer to it as the attachment.
 Never mention confidential or do-not-claim items (see master.md sections).
-Render and check: `python cvbuild.py letter <folder>/cover-letter.md --cv <folder>/cv.json` (PDF + DOCX of the letter; checks email.md and contact.md; writes a ready `mailto:` link into contact.md). Fix any FAIL.
+Render and check (letter, email, answers, contact): `python cvbuild.py letter <folder>/cover-letter.md --cv <folder>/cv.json` (PDF + DOCX of the letter; checks email.md and contact.md; writes a ready `mailto:` link into contact.md). Fix any FAIL.
 Reply with the file paths only.
